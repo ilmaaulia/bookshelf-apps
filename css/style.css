@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+.form input,
+.bookItem button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    background-color: #1C1C21;
+    color: #fdfefc;
+}
+
+.header {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4d58582d;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.title a {
+    text-decoration: none;
+    color: #E5C147;
+}
+
+.title span,
+.form input[type="text"],
+.form input[type="number"] {
+    color: #52b486;
+}
+
+.container {
+    max-width: 400px;
+    width: 75%;
+    margin: 40px auto 60px auto;
+}
+
+.container h2 {
+    font-size: 16px;
+}
+
+.container .description {
+    margin: 5px 0 12px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input[type="text"],
+.form input[type="number"] {
+    padding: 10px 2px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #A4A4A6;
+    outline: none;
+}
+
+.form input[type="text"]:focus,
+.form input[type="text"]:valid,
+.form input[type="number"]:focus,
+.form input[type="number"]:valid {
+    border-bottom: 2px solid #52b486;
+}
+
+.form label {
+    margin-right: 5px;
+}
+
+.form .inputCheckbox {
+    padding: 15px 0;
+    color: #A4A4A6;
+}
+
+.form input[type="submit"] {
+    padding: 10px;
+    background-color: #52b486;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.form input[type="submit"]:hover,
+.bookItem button.finishedButton:hover,
+.bookItem button.unFinishedButton:hover {
+    background-color: #52b486c3;
+}
+
+.bookItem {
+    background-color: #4d58582d;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.bookItem button {
+    margin: 5px 5px 0 0;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.bookItem button.finishedButton,
+.bookItem button.unFinishedButton {
+    background-color: #2f9d6a;
+}
+
+.bookItem button.deleteButton {
+    background-color: #b73e3e;
+}
+
+.bookItem button.deleteButton:hover {
+    background-color: #b73e3ed3;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title"><a href="index.html"><span>Bookshelf</span> Apps</a></h1>
+    </header>
+    <main>
+        <section class="container">
+            <h2>New book</h2>
+            <p class="description">Put a book on the shelf</p>
+            <form id="inputBookForm" class="form">
+                <input type="text" id="bookTitle" placeholder="Title" required>
+                <input type="text" id="bookAuthor" placeholder="Author" required>
+                <input type="number" id="bookYear" placeholder="Year" required>
+                <div class="inputCheckbox">
+                    <label for="isFinished">Finished reads</label>
+                    <input type="checkbox" name="isFinished" id="isFinished">
+                </div>
+                <input type="submit" value="Put the book">
+            </form>
+        </section>
+
+        <section class="container">
+            <h2>Search Book</h2>
+            <p class="description">Looking for a book?</p>
+            <form id="searchBookForm" class="form">
+                <input type="text" id="searchBookInput" placeholder="Enter book title or author" required>
+                <input type="submit" id="getSearchBook" value="Search">
+            </form>
+            <div id="searchResultList" class="bookList"></div>
+        </section>
+
+        <section id="bookShelf" class="container">
+            <h2>Unfinished Reads</h2>
+            <div id="unfinishedBookList" class="bookList"></div>
+        </section>
+
+        <section id="bookShelf" class="container">
+            <h2>Finished Reads</h2>
+            <div id="finishedBookList" class="bookList"></div>
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
